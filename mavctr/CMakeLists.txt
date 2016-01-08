@@ -1,0 +1,29 @@
+include_directories(include)
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+  ${Boost_INCLUDE_DIRS}
+)
+add_library(mavctr 
+	serial_port.cpp 
+	autopilot_interface.cpp
+	ros_comm.cpp)
+
+target_link_libraries(mavctr
+  ${catkin_LIBRARIES}
+  ${Boost_LIBRARIES}
+)
+
+add_executable(mavctr_node  mavlink_control.cpp )
+
+target_link_libraries(mavctr_node
+	mavctr
+	pthread
+)
+
+
+install(TARGETS mavctr_node
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

@@ -1,0 +1,15 @@
+uint64 	ts
+float32 ax		# X acceleration (m/s^2)
+float32 ay
+float32 az		
+float32 wx		# Angular speed around X axis (rad / sec)
+float32 wy
+float32 wz
+float32 mx		# Magnetic field (Gauss)
+float32 my
+float32 mz
+float32 abs_pressure	# Absolute pressure in millibar
+float32 diff_pressure	# Differential pressure in millibar
+float32 pressure_alt	# Altitude calculated from pressure
+float32 temperature	# Temperature in degrees celsius
+uint16 fields_updated	# Bitmask for fields that have updated since last message, bit 0 = xacc, bit 12: temperature

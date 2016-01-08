@@ -1,0 +1,33 @@
+/**
+ * @file ros_comm.cpp
+ *
+ * @brief ROS interface functions
+ *
+ * Functions for publish and subscribe message from ROS
+ *
+ *
+ */
+
+#include "ros_comm.h"
+
+
+// ----------------------------------------------------------------------------------
+//   ROS Interface Class
+// ----------------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------------
+//   Con/De structors
+// ------------------------------------------------------------------------------
+ROS_Communication::ROS_Communication(void)
+{
+	// initialize attributes
+;
+
+}
+
+ROS_Communication::~ROS_Communication(){}
+//ros::NodeHandle UAV;
+//ros::Publisher UAV_attitude;
+	//	UAV_attitude = UAV.advertise<std_msgs::String>("Attitude", 5)
+//	if  (UAV_attitude.getNumSubscribers() == 0)
+	//	return;

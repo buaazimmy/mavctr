@@ -1,0 +1,7 @@
+int32 ts
+float32 x
+float32 y
+float32 height
+float32 velx
+float32 vely
+float32 velz

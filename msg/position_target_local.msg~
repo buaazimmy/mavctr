@@ -1,0 +1,14 @@
+int32 ts
+float64 x
+float64 y
+float32 z
+float32 vx
+float32 vy
+float32 vz
+float32 afx
+float32 afy
+float32 afz
+float32 yaw
+float32 yaw_rate
+float32 type_mask
+float32 coordinate_frame
